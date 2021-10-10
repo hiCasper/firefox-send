@@ -71,7 +71,7 @@ const conf = convict({
   },
   redis_host: {
     format: String,
-    default: 'mock',
+    default: '',
     env: 'REDIS_HOST'
   },
   redis_event_expire: {
@@ -127,7 +127,7 @@ const conf = convict({
   },
   env: {
     format: ['production', 'development', 'test'],
-    default: 'development',
+    default: 'production',
     env: 'NODE_ENV'
   },
   max_file_size: {
